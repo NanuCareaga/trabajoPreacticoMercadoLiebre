@@ -9,6 +9,14 @@ app.get("/", (req,res)=>{
     res.sendFile((__dirname + "/views/home.html"));
 }) ;
 
+app.get("/", (req,res)=>{
+    res.sendFile((__dirname + "/views/login.html"));
+}) ;
+
+app.get("/", (req,res)=>{
+    res.sendFile((__dirname + "/views/register.html"));
+}) ;
+
 app.get("*", (req,res)=>{
     res.send("Ruta restringida, hemos localizado la direccion de su computador");
 });
